@@ -1,0 +1,29 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    /* margin: 0px 0px 200px 0px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+  }
+  
+  .toolbar img {
+    margin: 0 16px;
+  }
+  
+  .link1{
+    margin-left: 30px;
+    color: white;
+  }
+  
+  .profile {
+    margin-left: 55%;
+  }
+  

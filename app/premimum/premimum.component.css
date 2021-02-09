@@ -1,0 +1,32 @@
+
+
+
+
+body{
+    background-image: url("https://static.voices.com/wp-content/uploads/History-of-Audiobooks.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+    .parent{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         color: black;	
+         text-align: center;
+    }
+    .parent div{
+        margin: 2%;
+        border: 2px solid blue;
+        height: 150px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+    }
+
+
+
+    
+      

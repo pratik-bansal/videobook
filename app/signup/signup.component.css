@@ -1,0 +1,74 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    /* margin: 0px 0px 200px 0px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+
+
+
+
+
+
+  body{
+    background:url('https://www.patternpictures.com/wp-content/uploads/White-brick-wall-background-texture-PhotosPublic4419FD-1600x1003.jpg');
+    background-size:cover;
+    font-family:Arial;
+  }
+  .wrap{
+   max-width:350px;
+   border-radius:20px;
+   margin:auto;
+   background:rgba(0,0,0,0.8);
+   box-sizing:border-box;
+   padding:40px;
+   color:#fff;
+   margin-top:100px;
+  }
+  h2{
+    text-align:center;
+  }
+  input[type=text],input[type=password],input[type=tel]{
+    width:100%;
+    box-sizing:border-box;
+    padding:12px 5px;
+    background:rgba(0,0,0,0.10);
+    outline:none;
+    border:none;
+    border-bottom:1px dotted #fff;
+    color:#fff;
+    border-radius:5px;
+    margin:5px;
+    font-weight:bold;
+  }
+  input[type=submit]{
+    width:100%;
+    box-sizing:border-box;
+    padding:10px 0;
+    margin-top:30px;
+    outline:none;
+    border:none;
+    background:#60adde;
+    opacity:0.7;
+    border-radius:20px;
+    font-size:20px;
+    color:#fff;
+  }
+  input[type=submit]:hover{
+     background:#003366;
+     opacity:0.7;
+  }

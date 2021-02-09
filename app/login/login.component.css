@@ -1,0 +1,144 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    /* margin: 0px 0px 200px 0px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+
+
+
+body{
+	margin:0;
+	padding: 0;
+	min-height: 100vh;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+  
+  }
+  
+  .container {
+	  width: 300px;
+	  height: 420px;
+	  margin:0% auto;
+	  border-radius: 25px;
+	  background-color: rgba(00,00,00,0.8);
+	  box-shadow: 0 0 17px #fff;
+  }
+  
+  .header {
+	  text-align: center;
+	   padding-top: 10px;
+		
+  }
+  
+  .header h1 {
+	  color: #fff;
+	  font-size: 45px;
+	  margin-bottom: 80px;
+  }
+  
+  
+  .main {
+	  text-align: center;
+  }
+  
+  .main input, button {
+	  width: 270px;
+	  height: 45px;
+	  border-radius: 25px;
+	  background-color: rgba(225,225,225,0.8);
+	  border:none;
+	  outline: none;
+	  padding-left: 38px;
+	  box-sizing: border-box;
+	  font-size: 15px;
+	  margin-bottom: 20px;
+  }
+  .form-img{
+	  margin-top:-70px;
+	  height:100px;
+	  width:100px;
+	  border-radius:50px;
+  }
+  
+  
+  .main button {
+	  padding-left: 0;
+	  border-radius: 25px;
+	  background-color: rgba(0,0,0,0.1);
+	  letter-spacing: 1px;
+	  font-weight: bold;
+	  margin-bottom: 70px;
+	  background: linear-gradient(30deg,blue,#00CDDD);
+  }
+  
+  .main button:hover {
+	  box-shadow: 2px 2px 5px #fff;
+	  border-radius: 25px;
+	  background-color: rgba(0,0,0,0.1);
+	  }
+  
+  
+  .main span {
+	  position: relative;
+  }
+  
+  .main i {
+	  position: absolute;
+	  left: 15px;
+	  color: #fff;
+	  font-size: 16px;
+	  top: 2px;
+  }
+  .home{
+   color:white;
+   text-align:center;
+  }
+  button{
+	  padding-left: 0px;
+	  border-radius: 25px;
+	  background-color: rgba(0,0,0,0.1);
+	  letter-spacing: 1px;
+	  font-weight: bold;
+	  margin-bottom: 70px;
+	  background-color:green;
+  }
+  .container2 {
+  padding:10px;
+  }
+  .col{
+	  color: #fff;
+  }
+  footer {
+  
+  color:black;
+  
+  
+  }
+  .forgot{
+  color:red;
+  text-decoration:underline;
+  }
+  .google{
+  width:200px;
+  height:30px;
+  color:white;
+  text-decoration:underline;
+  }
+  
+  
