@@ -1,71 +1,67 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Play</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	
+  <title>Play</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
 </head>
 
 
 <body>
-    <div>
-        <app-mainnavbar></app-mainnavbar>
+
+
+
+  <div class="playcontent">
+
+
+
+    <div class="split left">
+      <div class="centered">
+        <video poster={{book.src}} style="object-fit:cover;" controls>
+          <source src={{book.url}} type="video/mp4">
+          <source src={{book.url}} type="video/ogg">
+          <source src={{book.url}} type="video/webm">
+          <source src={{book.url}} type="video/avi">
+        </video>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-<div class="playcontent">
-    <div class="row">
-  
-        
-       
-          
-            <div class="column">
 
-                <video  style="width: 80%;"  poster="https://st3.depositphotos.com/1001069/18596/i/600/depositphotos_185960324-stock-photo-audio-book-concept-headphones-books.jpg" controls>
-                    <source src="http://mobvd.com/download.php?id=10396&amp;format=144-3gp&amp;ext=3gp" type="video/mp4">
-                    <source src="http://mobvd.com/download.php?id=10396&amp;format=144-3gp&amp;ext=3gp" type="video/ogg">
-                        <source src="http://mobvd.com/download.php?id=10396&amp;format=144-3gp&amp;ext=3gp"
-                        type="video/webm">
-                        <source
-                        src="http://mobvd.com/download.php?id=10396&amp;format=144-3gp&amp;ext=3gp"
-                        type="video/avi">
-                 </video>
-               
-              </div >
-          
-                <div class="column">
-                
-                <h2 style="text-align: center ; text-shadow: 2px 2px;"> <span class="glyphicon glyphicon-tag"></span>  Book Detail</h2>
-                
-                <label for="wname" style="font-weight: 900;">Book Name* </label><br>
-                <input type="text" id="wname" name="writername" value="" ><br><br>
+    <div class="split right">
+      <div class="centered">
+        <h2 style="text-align: center ; text-shadow: 2px 2px;"> <span class="glyphicon glyphicon-tag"></span> Book
+          Detail</h2>
 
-                 
-                <label for="wname" style="font-weight: 900;">Auther Name* </label><br>
-                <input type="text" id="wname" name="writername" placeholder="writer"><br><br>
+        <label for="wname" style="font-weight: 900;">Book Name* </label><br>
+        <input type="text" id="wname" name="writername" [attr.value]="book.bookname"><br><br>
 
-                <label for="wname" style="font-weight: 900;"> Book categorie* </label><br>
-                <input type="text" id="wname" name="writername" placeholder="writer"><br><br>
 
-                <label for="wname" style="font-weight: 900;"> Price*(Rs) </label><br>
-                <input type="text" id="wname" name="writername" placeholder="Price"><br>
+        <label for="wname" style="font-weight: 900;">Auther Name* </label><br>
+        <input type="text" id="wname" name="writername" placeholder="Auther name"
+          [attr.value]="book.authername"><br><br>
+
+        <label for="wname" style="font-weight: 900;"> Book categorie* </label><br>
+        <input type="text" id="wname" name="writername" placeholder="categorie"
+          [attr.value]="book.bookcategories"><br><br>
+
+        <label for="wname" style="font-weight: 900;"> Price*(Rs) </label><br>
+        <input type="text" id="wname" name="writername" placeholder="Price" [attr.value]="book.bookprice"><br>
 
 
 
-                 
-                </div >
 
-          </div>
-	
-		
-        
-	
-</div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
 
 </body>
-</html>
 
+</html>

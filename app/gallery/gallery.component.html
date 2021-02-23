@@ -1,98 +1,98 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
- 
- </head>
- <app-mainnavbar></app-mainnavbar>
- <!-- card  -->
- 
- <div class="row" >
- 
-     <div class="cardbox column" *ngFor="let item of booklist">
-         <div class="card">
-         
-           <img src="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" alt="Avatar" style="width:100%">
-           <div class="container">
-             <h4><b>{{item.bookname}}</b></h4> 
-             <p>{{item.authername}}</p> 
-             <!-- <div class="container"> -->
-             <button type="button" class="btn btn-primary  button" [routerLink]='["/description/:id"]'>Play</button>
-             <button type="button" class="btn btn-success button">Download</button>
-             <router-outlet></router-outlet>
-           <!-- </div> -->
-           </div>
-         </div>
-     </div>
- 
-     
- 
-   
- 
+  -->
+</head>
+<app-mainnavbar *ngIf="!selectedbook"></app-mainnavbar>
+<!-- card  -->
 
 
- 
- 
+<div>
+  <div class="row" *ngIf="!selectedbook">
 
- 
-    
- </div> 
- <!-- card -->
-       
- 
- 
- 
- <div id="footer">
-   <footer  >
- 
-   <div class="row">
- 
-       <h1> CREATED BY: </h1>
-     <div class="column">
-       <a href="https://www.linkedin.com/in/pratik-b-7961a5138/" target="_blank">
-       <img  alt="Avatar" class="avatar" src="https://media-exp1.licdn.com/dms/image/C5103AQHjQcSLn4EkAg/profile-displayphoto-shrink_100_100/0/1570136985110?e=1616630400&v=beta&t=Ob6DoV0UG1yAyeYafLDg8MNMArfSe0_5ORxmfYoXFuw" />
-       <h4>Pratik Bansal</h4>
-       </a>
-     </div >
- 
-       <div class="column">
-         <a href="https://www.linkedin.com/in/ronak-nanda-499547202" target="_blank">
-         <img  alt="Avatar" class="avatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQGcIUD6gO_0VQ/profile-displayphoto-shrink_200_200/0/1611072318574?e=1616630400&v=beta&t=cm2ctA1kGqJAbCNuYbD5MfU7hfthOwscA-Eg0KyM5D0" />
-         
-         <h4>Ronak Nanda</h4>
-         </a>
-       </div >
- 
-       <div class="column">
-         <a href="https://www.linkedin.com/in/madhavi-muli-55a184175/" target="_blank">
-         <img  alt="Avatar" class="avatar"  src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_avatar_child_kid-512.png" />
-         <h4> Madhavi Muli</h4></a>
-       </div >
- 
-         <div class="column">
-           <a href="https://www.linkedin.com/in/kethinedi-sai-mahesh-731b101b8" target="_blank">
-           <img  alt="Avatar" class="avatar"  src="https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png" />
-           <h4>Sai Mahesh</h4></a>
-         </div >
- 
-           <div class="column">
-             <a href="https://www.linkedin.com/in/srilekha-battula-95009b16a/" target="_blank">
-             <img  alt="Avatar" class="avatar"  src="https://media-exp1.licdn.com/dms/image/C5103AQGX8msYehq16g/profile-displayphoto-shrink_200_200/0/1559905186194?e=1617840000&v=beta&t=LRd7VD8RUt3fE4l6EXFPYzBPLtZ_PEafqa03HnwxtgI" />
-             <h4>Srilekha Battula</h4></a>
-           </div >
- 
-             <div class="column">
-               <a href="https://www.linkedin.com/in/botla-anil-9632a51b8" target="_blank">
-               <img  alt="Avatar" class="avatar"  src="https://media-exp1.licdn.com/dms/image/C5603AQHWMSxmFDGW-g/profile-displayphoto-shrink_200_200/0/1600941823816?e=1616630400&v=beta&t=78_6h-od6dKaUIi4I-9Nh0QV4rAnTxoE4vaXqhD458k" />
-               <h4>  Botla Anil </h4></a>
-             </div >
-      
-     </div >
-     
-   </footer>
- 
- 
- </div>
- 
+    <div class="cardbox column" *ngFor="let item of booklist">
+      <div class="card">
+
+        <img src={{item.src}} alt="Avatar" style="width:100%; height: 120px;">
+        <br>
+
+        <div class="container">
+          <h5><b>Book:{{item.bookname}}</b></h5>
+          <p>{{item.authername}}</p>
+          <br>
+          <button type="button" class="btn btn-primary  button" (click)="onclick(item)">Play</button>
+          <button type="button" class="btn btn-success button" [routerLink]='["/premimum"]'>Download</button>
+          <router-outlet></router-outlet>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- card -->
+
+<footer *ngIf="!selectedbook">
+  <div id="footer">
+
+    <div class="row">
+
+      <h1> CREATED BY: </h1>
+      <div class="column">
+        <a href="https://www.linkedin.com/in/pratik-b-7961a5138/" target="_blank">
+          <img alt="Avatar" class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C5103AQHjQcSLn4EkAg/profile-displayphoto-shrink_100_100/0/1570136985110?e=1616630400&v=beta&t=Ob6DoV0UG1yAyeYafLDg8MNMArfSe0_5ORxmfYoXFuw" />
+          <h4>Pratik Bansal</h4>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.linkedin.com/in/ronak-nanda-499547202" target="_blank">
+          <img alt="Avatar" class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGcIUD6gO_0VQ/profile-displayphoto-shrink_200_200/0/1611072318574?e=1616630400&v=beta&t=cm2ctA1kGqJAbCNuYbD5MfU7hfthOwscA-Eg0KyM5D0" />
+
+          <h4>Ronak Nanda</h4>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.linkedin.com/in/madhavi-muli-55a184175/" target="_blank">
+          <img alt="Avatar" class="avatar"
+            src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/girl_avatar_child_kid-512.png" />
+          <h4> Madhavi Muli</h4>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.linkedin.com/in/kethinedi-sai-mahesh-731b101b8" target="_blank">
+          <img alt="Avatar" class="avatar"
+            src="https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png" />
+          <h4>Sai Mahesh</h4>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.linkedin.com/in/srilekha-battula-95009b16a/" target="_blank">
+          <img alt="Avatar" class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C5103AQGX8msYehq16g/profile-displayphoto-shrink_200_200/0/1559905186194?e=1617840000&v=beta&t=LRd7VD8RUt3fE4l6EXFPYzBPLtZ_PEafqa03HnwxtgI" />
+          <h4>Srilekha Battula</h4>
+        </a>
+      </div>
+
+      <div class="column">
+        <a href="https://www.linkedin.com/in/botla-anil-9632a51b8" target="_blank">
+          <img alt="Avatar" class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQHWMSxmFDGW-g/profile-displayphoto-shrink_200_200/0/1600941823816?e=1616630400&v=beta&t=78_6h-od6dKaUIi4I-9Nh0QV4rAnTxoE4vaXqhD458k" />
+          <h4> Botla Anil </h4>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+<app-description *ngIf="selectedbook" [book]="selecteddata"></app-description>

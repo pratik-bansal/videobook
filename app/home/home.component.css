@@ -1,44 +1,37 @@
-body,html {
-    height: 100%;
-    margin: 0;
-}
-
-
-
-
-.column {
-    float: left;
-    width: 50%;
+ div.scrollmenu {
   
-    padding: 5px;
-
-    border-left: 2px solid black;
-    height: 500px;
-    
-  
-    
-  }
-
-  video{
-      margin: 30px;
-      border-style: solid;
-      height: 400px;
-      /* width: 500px; */
-      
-
-     
-  }
-
-
-
-  input[type=text]{
-    width: 70%;
-    padding: 12px 20px;
-    margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+    overflow: auto;
+    white-space: nowrap;
+    height: 460px;
+    scrollbar-width: none;
+    width: 1366px;
+    
   }
+  
+
+  
+  
+  .container {
+  padding: 15px 12px;
+  /* margin: 10px; */
+  }
+  
+  .cardbox{
+    display: inline-block;
+    border: 1px solid;
+    width: 220px;
+    height: 320px;
+    margin:  10px  25px 0px 20px;
+    box-shadow: 5px 10px #888888;
+  
+  
+  }
+
+  
+  .button{
+  margin:  0px 10px 10px 10px;
+  }
+  
 
 

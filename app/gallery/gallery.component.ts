@@ -7,12 +7,21 @@ import bookdatas from '../_files/bookdata.json';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
+  selecteddata:any;
+  selectedbook:boolean=false;
   booklist:{id:String,bookname:String,authername:String,bookcategories:String,bookprice:String}[]=bookdatas;
-  constructor(private route:ActivatedRoute) { }
-
+  constructor() { }
+  
   ngOnInit(): void {
 
-    console.log(this.route.snapshot.params);
+
+  }
+
+  onclick(data){
+     
+    this.selecteddata=data;
+    this.selectedbook=true;
+
   }
 
 }

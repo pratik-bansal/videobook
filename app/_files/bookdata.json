@@ -1,30 +1,116 @@
 [
     {
-        "id":"1",
-    "bookname":  "pratik","authername": "bansal",
+    "id":"1",
+    "bookname":  "Jaan Ban Gaye","authername": "Mithoon",
     "bookcategories": "music",
-    "bookprice": "100"
+    "bookprice": "100",
+    "url":"http://mobvd.com/download.php?id=49845&format=128kbps&ext=mp3",
+    "src":"https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/480/Khuda-Haafiz-Hindi-2020-20200811111700-500x500.jpg"
+    
     
     },
     {   "id":"2",
-        "bookname":  "rahul","authername": "bansal",
+        "bookname":  "Temporary Pyar ","authername": "Kaka",
         "bookcategories": "music",
-        "bookprice": "90"
+        "bookprice": "90",
+        "url":"http://mobvd.com/download.php?id=50510&format=128kbps&ext=mp3",
+        "src":"http://a10.gaanacdn.com/images/albums/6/3634206/crop_480x480_1607791113_3634206.jpg"
         },
         {
             "id":"3",
-            "bookname":  "harpeet","authername": "pal",
+            "bookname":  "Kale Je Libaas Di","authername": "Kaka",
             "bookcategories": "music",
-            "bookprice": "200"
+            "bookprice": "200",
+            "url":" http://mobvd.com/download.php?id=50493&format=128kbps&ext=mp3",
+            "src":"https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/361/Libaas-Hindi-2021-20210210044631-500x500.jpg"
+    
             },
             {    "id":"4",
-                "bookname":  "rahul","authername": "bansal",
+                "bookname":  "Sharara","authername": "Shivjot",
                 "bookcategories": "music",
-                "bookprice": "90"
+                "bookprice": "90",
+                "url":"http://mobvd.com/download.php?id=50058&format=128kbps&ext=mp3",
+                "src":"https://sgdccdnems01.cdnsrv.jio.com/c.saavncdn.com/718/Sharara-Punjabi-2020-20200908124001-500x500.jpg"
                 },
         {   "id":"5",
-            "bookname":  "harpeet","authername": "pal",
+            "bookname":  "Ellde Fazilka","authername": "Sheh Singga",
             "bookcategories": "music",
-            "bookprice": "200"
-            }
+            "bookprice": "300",
+            "url":"http://mobvd.com/download.php?id=48317&format=128kbps&ext=mp3",
+            "src":"https://geetmp3.co/wp-content/uploads/2020/11/Sheh-Song-Mp3-Download-Singga-Ft-Ellde-Fazilka-Punjabi-2019.jpg"
+            },
+            {   "id":"6",
+                "bookname":  "Jaan Ban Gaye","authername": "Mithoon",
+                "bookcategories": "music",
+                "bookprice": "200",
+                "url":"http://mobvd.com/download.php?id=49845&format=128kbps&ext=mp3",
+                "src":"https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/480/Khuda-Haafiz-Hindi-2020-20200811111700-500x500.jpg"
+                
+
+                
+                },
+                {   "id":"7",
+                    "bookname":  "Kale Je Libaas Di","authername": "Kaka",
+                    "bookcategories": "music",
+                    "bookprice": "200",
+                    "url":" http://mobvd.com/download.php?id=50493&format=128kbps&ext=mp3",
+                    "src":"https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/361/Libaas-Hindi-2021-20210210044631-500x500.jpg"
+                    },
+
+                    {    "id":"8",
+                        "bookname":  "Sharara","authername": "Shivjot",
+                        "bookcategories": "music",
+                        "bookprice": "90",
+                        "url":"http://mobvd.com/download.php?id=50058&format=128kbps&ext=mp3",
+                        "src":"https://sgdccdnems01.cdnsrv.jio.com/c.saavncdn.com/718/Sharara-Punjabi-2020-20200908124001-500x500.jpg"
+                        },
+                        {   "id":"9",
+                            "bookname":  "Temporary Pyar ","authername": "Kaka",
+                            "bookcategories": "music",
+                            "bookprice": "90",
+                            "url":"http://mobvd.com/download.php?id=50510&format=128kbps&ext=mp3",
+                            "src":"http://a10.gaanacdn.com/images/albums/6/3634206/crop_480x480_1607791113_3634206.jpg"
+                            },
+                            {    "id":"10",
+                                "bookname":  "Sharara","authername": "Shivjot",
+                                "bookcategories": "music",
+                                "bookprice": "90",
+                                "url":"http://mobvd.com/download.php?id=50058&format=128kbps&ext=mp3",
+                                "src":"https://sgdccdnems01.cdnsrv.jio.com/c.saavncdn.com/718/Sharara-Punjabi-2020-20200908124001-500x500.jpg"
+                                },
+                                {
+                                    "id":"11",
+                                    "bookname":  "Jaan Ban Gaye","authername": "Mithoon",
+                                    "bookcategories": "music",
+                                    "bookprice": "100",
+                                    "url":"http://mobvd.com/download.php?id=49845&format=128kbps&ext=mp3",
+                                    "src":"https://sgdccdnems02.cdnsrv.jio.com/c.saavncdn.com/480/Khuda-Haafiz-Hindi-2020-20200811111700-500x500.jpg"
+                                    
+                                    
+                                    },
+                                   
+                                        {
+                                            "id":"12",
+                                            "bookname":  "Genda Phool","authername": "Badshah",
+                                            "bookcategories": "Nobel",
+                                            "bookprice": "200",
+                                            "url":"http://mobvd.com/download.php?id=49251&format=128kbps&ext=mp3",
+                                            "src":"https://sgdccdnems05.cdnsrv.jio.com/c.saavncdn.com/991/Genda-Phool-Hindi-2020-20200325120350-500x500.jpg"
+                                            
+                                            
+                                            },
+                                   
+                                        {
+                                            "id":"13",
+                                            "bookname":  "Meri Aashiqui","authername": "Jubin Nautiyal",
+                                            "bookcategories": "Nobel",
+                                            "bookprice": "200",
+                                            "url":"http://mobvd.com/download.php?id=49559&format=128kbps&ext=mp3",
+                                            "src":"https://sgdccdnems03.cdnsrv.jio.com/c.saavncdn.com/952/Meri-Aashiqui-Hindi-2020-20200602234001-500x500.jpg"
+                                            
+                                            
+                                            }
+    
+
+
 ]

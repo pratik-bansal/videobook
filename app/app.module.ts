@@ -1,41 +1,45 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {Routes, RouterModule}     from  '@angular/router';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule,routingComponents } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { SignupComponent } from './signup/signup.component';
-import { LoginComponent } from './login/login.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { PremimumComponent } from './premimum/premimum.component';
-import { WebhomeComponent } from './webhome/webhome.component';
-import { HomeComponent } from './home/home.component';
-import { DescriptionComponent } from './description/description.component';
 import { MainnavbarComponent } from './mainnavbar/mainnavbar.component';
 import { MainfooterComponent } from './mainfooter/mainfooter.component';
+import { ProfileComponent } from './profile/profile.component';
+import {AngularFireModule}  from '@angular/fire';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 
 
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDdq59CZgFG252CdhRczkEMcInVe3U-YdU",
+  authDomain: "audiobook-ce377.firebaseapp.com",
+  projectId: "audiobook-ce377",
+  storageBucket: "audiobook-ce377.appspot.com",
+  messagingSenderId: "237490650176",
+  appId: "1:237490650176:web:9d0e3010f556928eadf3a5",
+  measurementId: "G-S2LFV2F5BV"
+};
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent,
-    LoginComponent,
-    GalleryComponent,
-    PremimumComponent,
-    WebhomeComponent,
-    HomeComponent,
-    DescriptionComponent,
+    routingComponents,
     MainnavbarComponent,
-    MainfooterComponent
+    MainfooterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

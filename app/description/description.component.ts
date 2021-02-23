@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import bookdatas from '../_files/bookdata.json'; 
 
 import {ActivatedRoute} from '@angular/router';
@@ -8,12 +8,14 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./description.component.css']
 })
 export class DescriptionComponent implements OnInit {
-  booklist:{id:String,bookname:String,authername:String,bookcategories:String,bookprice:String}[]=bookdatas;
-
-  constructor(private route:ActivatedRoute) { }
+  // booklist:{id:String,bookname:String,authername:String,bookcategories:String,bookprice:String}[]=bookdatas;
+  
+  @Input()
+  book;
+  constructor() { }
 
   ngOnInit(): void {
-    console.log(this.route.snapshot.params)
+    console.log(this.book)
   }
 
 }
